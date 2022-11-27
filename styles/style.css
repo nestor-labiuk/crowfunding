@@ -1,18 +1,30 @@
 body{
   font-family: 'Commissioner', sans-serif;
 }
-.navbar{
+
+.header_img{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.header_nav{
   position: absolute;
-  height: 50px;
   top: 0;
-  padding-top: 25px;
+  width: 100%;
+}
+
+.header_nav-titulos{
+  margin: 20px 30px;
+}
+
+.header_lista{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .lista{
-  width: 300px;
-}
-
-.icono{
-  color: aliceblue;
+  width: 280px;
 }
 

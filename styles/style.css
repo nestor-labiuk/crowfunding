@@ -15,7 +15,7 @@ body{
 }
 
 .header_nav-titulos{
-  margin: 20px 30px;
+  margin: 10px 20px;
 }
 
 .header_lista{
@@ -27,4 +27,38 @@ body{
 .lista{
   width: 280px;
 }
+
+@media only screen and (min-width: 576px){
+  .header_nav-titulos{
+    margin: 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .header_nav-titulos{
+    margin: 12px 60px;
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+  .header_nav-titulos{
+    margin: 15px 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .header_nav-titulos{
+    margin: 18px 100px;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  .header_nav-titulos{
+    margin: 20px 140px;
+  }
+}
+
+
+
 

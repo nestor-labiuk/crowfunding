@@ -1,0 +1,30 @@
+body{
+  font-family: 'Commissioner', sans-serif;
+}
+
+.header_img{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.header_nav{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.header_nav-titulos{
+  margin: 20px 30px;
+}
+
+.header_lista{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lista{
+  width: 280px;
+}
+

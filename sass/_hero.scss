@@ -1,0 +1,48 @@
+
+.header { 
+  
+  &_img {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  &_nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &-titulos {
+      margin: 10px 20px;
+    }
+
+    @media only screen and (min-width: 576px){
+      &-titulos{ margin: 10px 20px; }
+    }
+
+    @media only screen and (min-width: 768px){
+      &-titulos{ margin: 12px 60px; }
+    }
+
+    @media only screen and (min-width: 992px){
+      &-titulos{ margin: 15px 80px; }
+    }
+
+    @media only screen and (min-width: 1200px){
+      &-titulos{ margin: 18px 100px; }
+    }
+
+    @media only screen and (min-width: 1400px){
+      &-titulos{ margin: 20px 140px; }
+    }
+
+  }
+
+  &_lista {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .lista { width: 280px; }
+}

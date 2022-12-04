@@ -1,5 +1,6 @@
-@use '_hero.scss';
-@use '_variables.scss' as var;
+@use './partials/_hero.scss';
+@use './partials/_variables.scss' as var;
+@use './partials/_main.scss';
 
 :root {
   --color-principal-1: #{var.$primary-color-light};

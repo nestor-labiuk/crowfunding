@@ -43,4 +43,23 @@
 }
 .header .lista {
   width: 280px;
+}
+
+:root {
+  --color-principal-1: hsl(176deg, 50%, 47%);
+  --color-principal-2: hsl(176deg, 72%, 28%);
+  --color-neutral-1: hsl(0deg, 0%, 0%);
+  --color-neutral-2: hsl(0deg, 0%, 48%);
+  --color-white: #fafafa;
+  --font-size: 16px;
+  --weight-1: 400;
+  --weight-2: 500;
+  --weight-3: 700;
+}
+
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-white);
 }/*# sourceMappingURL=main.css.map */

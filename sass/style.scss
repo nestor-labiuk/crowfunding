@@ -1,24 +1,2 @@
 @use './partials/_hero.scss';
-@use './partials/_variables.scss' as var;
 @use './partials/_main.scss';
-
-:root {
-  --color-principal-1: #{var.$primary-color-light};
-  --color-principal-2: #{var.$primary-color-dark};
-  --color-neutral-1: #{var.$neutral-color-black};
-  --color-neutral-2: #{var.$neutral-color-gray};
-  --color-white: #fafafa;
-  
-  --font-size: #{var.$font-size-body};
-
-  --weight-1: #{var.$regular-weight};
-  --weight-2: #{var.$medium-weight};
-  --weight-3: #{var.$bold-weight};
-}
-
-html, body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  // background-color: var(--color-white);
-}

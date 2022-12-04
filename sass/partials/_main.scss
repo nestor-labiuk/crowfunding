@@ -1,11 +1,99 @@
 @use '_mixin.scss' as mixin;
+@use '_variables.scss' as var;
 
+:root {
+  --color-principal-1: #{var.$primary-color-light};
+  --color-principal-2: #{var.$primary-color-dark};
+  --color-neutral-1: #{var.$neutral-color-black};
+  --color-neutral-2: #{var.$neutral-color-gray};
+  --color-white: #fafafa;
+  
+  --font-size: #{var.$font-size-body};
 
-.container__mastercraft{
+  --weight-1: #{var.$regular-weight};
+  --weight-2: #{var.$medium-weight};
+  --weight-3: #{var.$bold-weight};
+}
+
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Commissioner', sans-serif;
+}
+
+.container{
   @include mixin.flex(column, center, center);
   width: 80%;
   max-width: 800px;
   margin: auto;
-  text-align: center;
-  font-size: mixin.pixelToRem(1.5px);
+  margin: {
+    top: -4rem;
+    bottom: 2rem;
+  }
+  position: relative;
+  z-index: 50;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.13rem #000;
+  border-radius: 0.63rem;
+
+  & > img {
+    margin-top: -3rem;
+  }
+
+  .title {
+    @include mixin.font(var(--color-neutral-1), var(--weight-2), center, 1.5rem);
+    margin: 1.5rem 0;
+  }
+  &__paragraph {
+    @include mixin.font(var(--color-neutral-2), var(--weight-1), center, .8rem);
+    line-height: 1.6;
+    width: 100%;
+  }
+  &__btns {
+    @include mixin.flex(row, center, center);
+    gap: 1rem;
+    
+    button {
+      @include mixin.flex(row, center, center);
+      border: none;
+      border-radius: 2rem;
+      &:first-child {
+        @include mixin.font(#fff, var(--weight-2), center, 1rem);
+        background-color: var(--color-principal-1);
+        padding: 15px 25px;
+      }
+      &:last-child {
+        padding: 0;
+        width: auto;
+      }
+    }
+  }
+  &__stats, &__about { margin-top: 0; }
+
+  &__stats {
+    & div {
+      // width: 100%;
+      margin-bottom: 1.5rem;
+
+      .subtitle {
+        @include mixin.font(var(--color-neutral-1), var(--weight-3), center, 2.9rem);
+        width: 100%;
+        margin: auto;
+        & > span {
+          @include mixin.font(var(--color-neutral-2), var(--weight-1), center, 0.9rem);
+          display: block;
+          padding-top: 0.5rem;
+        }
+      }
+
+      hr {
+        width: 30%;
+        margin: auto;
+        margin-top: 1.5rem;
+      }
+    }
+  } 
 }

@@ -45,18 +45,6 @@
   width: 280px;
 }
 
-.container__mastercraft {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-  font-size: 0.75rem;
-}
-
 :root {
   --color-principal-1: hsl(176deg, 50%, 47%);
   --color-principal-2: hsl(176deg, 72%, 28%);
@@ -73,4 +61,96 @@ html, body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Commissioner", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 50;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.13rem #000;
+  border-radius: 0.63rem;
+}
+.container > img {
+  margin-top: -3rem;
+}
+.container .title {
+  color: var(--color-neutral-1);
+  font-weight: var(--weight-2);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+.container__paragraph {
+  color: var(--color-neutral-2);
+  font-weight: var(--weight-1);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  width: 100%;
+}
+.container__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container__btns button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2rem;
+}
+.container__btns button:first-child {
+  color: #fff;
+  font-weight: var(--weight-2);
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--color-principal-1);
+  padding: 15px 25px;
+}
+.container__btns button:last-child {
+  padding: 0;
+  width: auto;
+}
+.container__stats, .container__about {
+  margin-top: 0;
+}
+.container__stats div {
+  margin-bottom: 1.5rem;
+}
+.container__stats div .subtitle {
+  color: var(--color-neutral-1);
+  font-weight: var(--weight-3);
+  text-align: center;
+  font-size: 2.9rem;
+  width: 100%;
+  margin: auto;
+}
+.container__stats div .subtitle > span {
+  color: var(--color-neutral-2);
+  font-weight: var(--weight-1);
+  text-align: center;
+  font-size: 0.9rem;
+  display: block;
+  padding-top: 0.5rem;
+}
+.container__stats div hr {
+  width: 30%;
+  margin: auto;
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

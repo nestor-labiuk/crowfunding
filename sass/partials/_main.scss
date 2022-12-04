@@ -1,8 +1,11 @@
-@use '_mixin.scss';
+@use '_mixin.scss' as mixin;
 
 
-.container {
-  width: 90%;
+.container__mastercraft{
+  @include mixin.flex(column, center, center);
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
-  @include _mixin.flex(column, center, center);
+  font-size: mixin.pixelToRem(1.5px);
 }

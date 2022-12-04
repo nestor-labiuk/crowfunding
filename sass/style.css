@@ -45,9 +45,16 @@
   width: 280px;
 }
 
-.container {
-  width: 90%;
+.container__mastercraft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
+  font-size: 0.75rem;
 }
 
 :root {
@@ -66,5 +73,4 @@ html, body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: var(--color-white);
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-
+@use 'sass:math' as math;
 
 
 @mixin flex($direction, $justify, $align) {
@@ -7,3 +7,12 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+
+
+
+@function pixelToRem($medida) {
+  $rem: math.div($medida, 2px) * 1rem;
+  @return $rem;
+}
+ 

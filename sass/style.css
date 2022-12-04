@@ -153,4 +153,22 @@ html, body {
   width: 30%;
   margin: auto;
   margin-top: 1.5rem;
+}
+.container__stats .progress {
+  width: 90%;
+  position: relative;
+  height: 20px;
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: rgb(194, 194, 194);
+  border-radius: 30px;
+}
+.container__stats .progress::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 75%;
+  height: 20px;
+  background-color: var(--color-principal-1);
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */

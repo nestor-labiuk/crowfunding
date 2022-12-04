@@ -114,5 +114,83 @@ html, body {
         border-radius: 30px;
       }
     }
-  } 
+  }
+}
+
+.container__about {
+  width: 80%;
+  .subtitle, .container__paragraph { text-align: left; }
+
+  .subtitle {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: var(--weight-3);
+  }
+
+  .about {
+    width: 100%;
+    margin-top: 2rem;
+    @include mixin.flex(column, center, center);
+    border: 1px solid #e2e2e2;
+    border-radius: .9rem;
+    padding: 1.3rem;
+    position: relative;
+ 
+    .subtitle {
+      font-size: 1rem;
+      span {
+        display: block;
+        text-align: left;
+        margin-top: .5rem;
+        color: var(--color-principal-1)
+      }
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    .reward {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        @include mixin.flex(row, flex-start, center);
+        @include mixin.font(var(--color-neutral-1), var(--weight-2), left, 2.5rem);
+        margin: .2rem;
+
+        span {
+          font-size: 1.2rem;
+          margin-left: .5rem;
+          color: var(--color-neutral-2);
+        }
+      }
+
+      &-btn {
+        width: 85%;
+        @include mixin.font(#fafafa, var(--weight-3), left, 1rem);
+        margin-top: 1.3rem;
+        padding: 1rem 2rem;
+        border-radius: 2.5rem;
+        border: none;
+        background-color: var(--color-principal-1);
+      }
+    }
+
+    .disable {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 2000;
+      border-radius: .9rem;
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 16px;
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      border: 1px solid rgba(255, 255, 255, 0.27);
+    } 
+  }
 }

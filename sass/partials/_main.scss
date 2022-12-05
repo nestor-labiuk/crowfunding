@@ -1,0 +1,196 @@
+@use '_mixin.scss' as mixin;
+@use '_variables.scss' as var;
+
+:root {
+  --color-principal-1: #{var.$primary-color-light};
+  --color-principal-2: #{var.$primary-color-dark};
+  --color-neutral-1: #{var.$neutral-color-black};
+  --color-neutral-2: #{var.$neutral-color-gray};
+  --color-white: #fafafa;
+  
+  --font-size: #{var.$font-size-body};
+
+  --weight-1: #{var.$regular-weight};
+  --weight-2: #{var.$medium-weight};
+  --weight-3: #{var.$bold-weight};
+}
+
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Commissioner', sans-serif;
+}
+
+.container{
+  @include mixin.flex(column, center, center);
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin: {
+    top: -4rem;
+    bottom: 2rem;
+  }
+  position: relative;
+  z-index: 50;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.13rem #000;
+  border-radius: 0.63rem;
+
+  & > img {
+    margin-top: -3rem;
+  }
+
+  .title {
+    @include mixin.font(var(--color-neutral-1), var(--weight-2), center, 1.5rem);
+    margin: 1.5rem 0;
+  }
+  &__paragraph {
+    @include mixin.font(var(--color-neutral-2), var(--weight-1), center, .8rem);
+    line-height: 1.6;
+    width: 100%;
+  }
+  &__btns {
+    @include mixin.flex(row, center, center);
+    gap: 1rem;
+    
+    button {
+      @include mixin.flex(row, center, center);
+      border: none;
+      border-radius: 2rem;
+      &:first-child {
+        @include mixin.font(#fff, var(--weight-2), center, 1rem);
+        background-color: var(--color-principal-1);
+        padding: 15px 25px;
+      }
+      &:last-child {
+        padding: 0;
+        width: auto;
+      }
+    }
+  }
+  &__stats, &__about { margin-top: 0; }
+
+  &__stats {
+    & div {
+      // width: 100%;
+      margin-bottom: 1.5rem;
+
+      .subtitle {
+        @include mixin.font(var(--color-neutral-1), var(--weight-3), center, 2.9rem);
+        width: 100%;
+        margin: auto;
+        & > span {
+          @include mixin.font(var(--color-neutral-2), var(--weight-1), center, 0.9rem);
+          display: block;
+          padding-top: 0.5rem;
+        }
+      }
+
+      hr {
+        width: 30%;
+        margin: auto;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .progress {
+      width: 90%;
+      position: relative;
+      height: 20px;
+      margin: auto;
+      margin-bottom: 1rem;
+      background-color: rgb(194, 194, 194);
+      border-radius: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        width: 75%;
+        height: 20px;
+        background-color: var(--color-principal-1);
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+.container__about {
+  width: 80%;
+  .subtitle, .container__paragraph { text-align: left; }
+
+  .subtitle {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: var(--weight-3);
+  }
+
+  .about {
+    width: 100%;
+    margin-top: 2rem;
+    @include mixin.flex(column, center, center);
+    border: 1px solid #e2e2e2;
+    border-radius: .9rem;
+    padding: 1.3rem;
+    position: relative;
+ 
+    .subtitle {
+      font-size: 1rem;
+      span {
+        display: block;
+        text-align: left;
+        margin-top: .5rem;
+        color: var(--color-principal-1)
+      }
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    .reward {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        @include mixin.flex(row, flex-start, center);
+        @include mixin.font(var(--color-neutral-1), var(--weight-2), left, 2.5rem);
+        margin: .2rem;
+
+        span {
+          font-size: 1.2rem;
+          margin-left: .5rem;
+          color: var(--color-neutral-2);
+        }
+      }
+
+      &-btn {
+        width: 85%;
+        @include mixin.font(#fafafa, var(--weight-3), left, 1rem);
+        margin-top: 1.3rem;
+        padding: 1rem 2rem;
+        border-radius: 2.5rem;
+        border: none;
+        background-color: var(--color-principal-1);
+      }
+    }
+
+    .disable {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 2000;
+      border-radius: .9rem;
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 16px;
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      border: 1px solid rgba(255, 255, 255, 0.27);
+    } 
+  }
+}

@@ -11,28 +11,28 @@
     <meta name="description"
           content="Página de proyecto de crownfunding para comision 26-i de Rolling Code  school">
     <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" />
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Roboto:wght@300;400&display=swap"
           rel="stylesheet">
-    <title>crowdfunding</title>
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>Crowdfunding</title>
   </head>
 
   <body>
-    <header class="container-fluid  p-0">
+    <header class="container-fluid p-0 header">
       <div class="header_img">
         <img class="img-fluid d-block d-sm-none "
-             src="./assets/image-hero-mobile.jpg"
+             src="./assets/img_hero/image-hero-mobile.jpg"
              alt="Escritorio con PC teclado y mouse">
-        <img class="img-fluid d-none d-sm-block " src="./assets/image-hero-desktop-02.jpg"
+        <img class="img-fluid d-none d-sm-block " src="./assets/img_hero/image-hero-desktop-02.jpg"
              alt="Escritorio con PC teclado y mouse">
       </div>
       <nav class="navbar navbar-expand-sm navbar-dark header_nav ">
@@ -71,6 +71,90 @@
         </div>
       </nav>
     </header>
+    <main class="d-block w-100">
+      <div class="total-layer"></div>
+      <section class="container container__mastercraft" id="asd">
+        <img src="./assets/icons/logo-mastercraft.svg" alt="" />
+        <h1 class="title">Mastercraft Bamboo Monitor Riser</h1>
+        <p  class="container__paragraph">
+          A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+        </p>
+        <div class="container__btns">
+          <button class="btn">Back this project</button>
+          <button class="btn">
+            <img src="./assets/icons/icon-bookmark.svg" alt="icon bookmark" />
+            <span class="bookmark d-none d-md-inline">Bookmark</span>
+          </button>
+        </div>
+      </section>
+      <section class="container container__stats">
+        <div>
+          <h2 class="subtitle">$89, 914 <span>of $100,000 backed</span></h2>
+          <hr />
+          <h2 class="subtitle">5,007 <span> total backers</span></h2>
+          <hr />
+          <h2 class="subtitle">56 <span>days left</span></h2>
+        </div>
+        <div class="progress"></div>
+      </section>
+      <section class="container container__about">
+        <h2 class="subtitle">About this project</h2>
+        <p class="container__paragraph">
+          The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform
+          that elevates your screen to a more comfortable viewing height.
+          Placing your monitor at eye level has the potential to improve your
+          posture and make you more comfortable while at work, helping you stay
+          focused on the task at hand.
+        </p>
+        <p class="container__paragraph">
+          Featuring artisan craftsmanship, the simplicity of design creates
+          extra desk space below your computer to allow notepads, pens, and USB
+          sticks to be stored under the stand.
+        </p>
+        <article class="about">
+          <h2 class="subtitle">Bamboo Stand <span>Pledge $25 or more</span></h2>
+          <p class="container__paragraph">
+            You get an ergonomic stand made of natural bamboo. You've helped us
+            launch our promotional campaign, and you’ll be added to a special
+            Backer member list.
+          </p>
+          <div class="reward">
+            <h4>101 <span>left</span></h4>
+            <button class="reward-btn">Select Reward</button>
+          </div>
+        </article>
+        <article class="about">
+          <h2 class="subtitle">Black Edition Stand <span>Pledge $75 or more</span></h2>
+          <p class="container__paragraph">
+            You get a Black Special Edition computer stand and a personal thank
+            you. You’ll be added to our Backer member list. Shipping is
+            included.
+          </p>
+          <div class="reward">
+            <h4>64 <span>left</span></h4>
+            <button class="reward-btn">Select Reward</button>
+          </div>
+        </article>
+
+        <article class="about">
+          <div class="disable"></div>
+          <h2 class="subtitle">Mahogany Special Edition <span>Pledge $200 or more</span></h2>
+          <p class="container__paragraph">
+            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
+            personal thank you. You’ll be added to our Backer member list.
+            Shipping is included.
+          </p>
+          <div class="reward">
+            <h4>0 <span>left</span></h4>
+            <button class="reward-btn">Out of Stock</button>
+          </div>
+        </article>
+
+
+
+      </section>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>

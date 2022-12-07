@@ -304,4 +304,36 @@ html, body {
     width: 30%;
     display: inline;
   }
+}
+.modal {
+  font-family: "Commissioner", sans-serif !important;
+}
+.modal-content {
+  padding: 1rem 1.3rem;
+}
+.modal-header {
+  border: none;
+}
+.modal-title, .modal .btn-close {
+  font-weight: 700;
+}
+.modal-body p {
+  font-size: 0.9rem;
+  color: hsl(0deg, 0%, 48%);
+  line-height: 1.8;
+}
+.modal-body > div {
+  border: 1px solid #dddcdc;
+  border-radius: 0.4rem;
+  padding: 1rem 1.5rem;
+}
+.modal-body > div p {
+  margin-top: 1rem;
+}
+.modal-body .label__span {
+  padding-left: 1rem;
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */

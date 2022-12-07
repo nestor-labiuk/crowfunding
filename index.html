@@ -120,7 +120,7 @@
           </p>
           <div class="reward">
             <h4>101 <span>left</span></h4>
-            <button class="reward-btn">Select Reward</button>
+            <button class="reward-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Reward</button>
           </div>
         </article>
         <article class="about">
@@ -132,7 +132,7 @@
           </p>
           <div class="reward">
             <h4>64 <span>left</span></h4>
-            <button class="reward-btn">Select Reward</button>
+            <button class="reward-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Select Reward</button>
           </div>
         </article>
 
@@ -146,13 +146,85 @@
           </p>
           <div class="reward">
             <h4>0 <span>left</span></h4>
-            <button class="reward-btn">Out of Stock</button>
+            <button class="reward-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Out of Stock</button>
           </div>
         </article>
 
 
 
       </section>
+
+
+
+
+
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Back this project</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="mb-4">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+              <div>
+                <label class="label">
+                  <input type="radio" name="pledge" value="pledge" />
+                  <span class="label__span">Pledge with no reward</span>
+                </label>
+                <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
+                  you will be signed up to receive product updates via email.</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="modal-body">
+              <div>
+                <label class="label">
+                  <input type="radio" name="pledge" value="pledge" />
+                  <span class="label__span">Bamboo Stand</span>
+                </label>
+                <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                  you’ll be added to a special Backer member list.</p>
+              </div>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <label class="label">
+                  <input type="radio" name="pledge" value="pledge" />
+                  <span class="label__span">Black Edition Stand</span>
+                </label>
+                <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                  member list. Shipping is included.</p>
+              </div>
+            </div>
+
+            <div class="modal-body" style="opacity: 0.5;">
+              <div>
+                <label class="label">
+                  <input type="radio" name="pledge" value="pledge" />
+                  <span class="label__span">Mahogany Special Edition</span>
+                </label>
+                <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                  to our Backer member list. Shipping is included.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

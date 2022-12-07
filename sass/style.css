@@ -156,6 +156,7 @@ html, body {
 }
 .container__stats .progress {
   width: 90%;
+  max-width: 800px;
   position: relative;
   height: 20px;
   margin: auto;
@@ -166,6 +167,7 @@ html, body {
 .container__stats .progress::before {
   content: "";
   position: absolute;
+  left: 0;
   z-index: 3;
   width: 75%;
   height: 20px;
@@ -254,4 +256,52 @@ html, body {
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+@media screen and (min-width: 800px) {
+  .container__btns {
+    width: 90%;
+  }
+  .container__btns button:first-child {
+    margin-right: auto;
+  }
+  .container__btns button:first-child:hover {
+    background-color: var(--color-principal-2);
+  }
+  .container__btns button:last-child {
+    background-color: rgb(233, 230, 230);
+    color: var(--color-neutral-2);
+    font-weight: var(--weight-3);
+    text-align: center;
+    font-size: -4rem;
+  }
+  .container__btns button:last-child span {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .container__stats div {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__stats div hr {
+    display: none;
+  }
+  .container__stats div h2 {
+    border-right: 2px solid #e6e6e6;
+  }
+  .container__stats div h2:last-child {
+    border: none;
+  }
+  .container__about .about .subtitle span {
+    display: inline;
+    margin: 0;
+    float: right;
+  }
+  .container__about .about .reward .reward-btn {
+    width: 30%;
+    display: inline;
+  }
 }/*# sourceMappingURL=style.css.map */

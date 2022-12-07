@@ -98,6 +98,7 @@ html, body {
 
     .progress {
       width: 90%;
+      max-width: 800px;
       position: relative;
       height: 20px;
       margin: auto;
@@ -107,6 +108,7 @@ html, body {
       &::before {
         content: "";
         position: absolute;
+        left: 0;
         z-index: 3;
         width: 75%;
         height: 20px;
@@ -192,5 +194,55 @@ html, body {
       -webkit-backdrop-filter: blur(0px);
       border: 1px solid rgba(255, 255, 255, 0.27);
     } 
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .container__btns {
+    width: 90%;
+    button {
+      &:first-child { 
+        margin-right: auto;
+        &:hover {
+          background-color: var(--color-principal-2);
+        } 
+      }
+      &:last-child {
+        background-color: rgb(233, 230, 230);
+        @include mixin.font(var(--color-neutral-2), var(--weight-3), center, 1-5rem);
+        & span {
+          padding: {
+            left: 1rem;
+            right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .container__stats div {
+    width: 90%;
+    @include mixin.flex(row, center, center);
+
+    & hr { display: none; }
+    h2 { 
+      border-right: 2px solid #e6e6e6;
+      &:last-child { border: none; } 
+    }
+  }
+
+  .container__about {
+    .about .subtitle {
+      span {
+        display: inline;
+        margin: 0;
+        float: right;  
+      }
+    }
+    & .about .reward .reward-btn{
+      width: 30%;
+      display: inline;
+    }
   }
 }
